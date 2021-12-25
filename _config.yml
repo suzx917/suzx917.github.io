@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: PL入门
+title: "PL入门"
 tagline: ": ZXSpace"
 description: >- # this means to ignore newlines until "baseurl:"
   A space of Zixiu Su
@@ -30,13 +30,16 @@ author.name: Zixiu Su
 author.url: ""
 email: szx917@gmail.com
 
-twitter_username: 
 github_username: suzx917
 
 # Build settings
-theme: monophase
+
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+remote_theme: zivhub/monophase@main
 
 google_analytics: G-TZC73MTG8V
 
